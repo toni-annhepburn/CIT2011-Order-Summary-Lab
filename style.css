@@ -1,0 +1,209 @@
+/*
+Student Name: Toni-Ann Hepburn
+Student ID: 1901760
+Module: CIT2011 - Web Programming
+Assignment: CSS Layout Challenge - Order Summary Component
+*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: "Red Hat Display", sans-serif;
+
+    background-color: hsl(225, 100%, 94%);
+    
+}
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 450px;
+    
+    box-shadow: 0 20px 30px rgba(56, 41, 224, 0.15);
+    
+    background-color: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 40px 48px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 16px;
+
+    color: hsl(223, 47%, 23%);
+
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.description {
+    margin: 0;
+
+    color: hsl(224, 23%, 55%);
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 1.6;
+}
+
+.plan-box {
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 24px;
+
+    background-color: hsl(225, 100%, 98%);
+
+    border-radius: 12px;
+}
+
+.plan-left {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.music-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.plan-text {
+    text-align: left;
+}
+
+.plan-text h2 {
+    margin: 0 0 4px;
+
+    color: hsl(223, 47%, 23%);
+
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.plan-text p {
+    margin: 0;
+
+    color: hsl(224, 23%, 55%);
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.change-link {
+    color: hsl(245, 75%, 52%);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.payment-button {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: hsl(245, 75%, 52%);
+
+    color: white;
+
+    font-family: "Red Hat Display", sans-serif;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow: 0 15px 20px rgba(56, 41, 224, 0.25);
+}
+
+.cancel-button {
+    margin-top: 28px;
+
+    border: none;
+
+    background: none;
+
+    color: hsl(224, 23%, 55%);
+
+    font-family: "Red Hat Display", sans-serif;
+
+    font-size: 15px;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .page {
+        padding: 24px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 327px;
+    }
+
+    .hero-image {
+        height: auto;
+    }
+
+    .card-content {
+        padding: 28px 24px 32px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .plan-box {
+        padding: 16px;
+    }
+
+    .plan-left {
+        gap: 14px;
+    }
+
+    .plan-text h2,
+    .plan-text p {
+        font-size: 14px;
+    }
+
+    .change-link {
+        font-size: 13px;
+    }
+}
